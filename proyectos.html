@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    
+    <!-- NUEVO ENLACE AL CSS EXTERNO -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script id="tailwind-config" src="tailwind.js"></script>
+</head>
+
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container flex flex-col min-h-screen">
+    <h2>Proyectos Messi</h2>
+    <a href="index.html">Ir a index</a>
+    
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+        <!-- Project 1 -->
+        <article class="bg-[#1E293B] rounded-lg border border-[#334155] hover:border-primary transition-colors focus-within:outline focus-within:outline-2 focus-within:outline-[#06B6D4] focus-within:outline-offset-4 flex flex-col h-full">
+            <div class="h-48 bg-surface-container-high rounded-t-lg flex items-center justify-center border-b border-[#334155]">
+                <span aria-hidden="true" class="material-symbols-outlined text-[64px] text-tertiary">calculate</span>
+            </div>
+            <div class="p-md flex-grow flex flex-col">
+                <h3 class="text-headline-md font-headline-md mb-xs">Calculadora Web Accesible</h3>
+                <p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-sm">
+                    Aplicación web construida con HTML y CSS semántico, garantizando navegación por teclado completa y
+                    soporte integral para lectores de pantalla.
+                </p>
+                <a aria-label="Ver detalles de Calculadora Web Accesible" class="inline-flex items-center gap-xs text-primary hover:text-white font-label-md text-label-md focus:outline focus:outline-2 focus:outline-[#06B6D4] focus:outline-offset-2 rounded" href="#">
+                    Ver detalles <span aria-hidden="true" class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+        </article>
+        
+        <!-- Project 2 -->
+        <article class="bg-[#1E293B] rounded-lg border border-[#334155] hover:border-primary transition-colors focus-within:outline focus-within:outline-2 focus-within:outline-[#06B6D4] focus-within:outline-offset-4 flex flex-col h-full">
+            <div class="h-48 bg-surface-container-high rounded-t-lg flex items-center justify-center border-b border-[#334155]">
+                <span aria-hidden="true" class="material-symbols-outlined text-[64px] text-secondary">terminal</span>
+            </div>
+            <div class="p-md flex-grow flex flex-col">
+                <h3 class="text-headline-md font-headline-md mb-xs">Software de Gestión en Java</h3>
+                <p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-sm">
+                    Sistema empresarial para control de inventario desarrollado en Java, implementando patrones de
+                    diseño MVC y arquitectura en capas para mantenibilidad.
+                </p>
+                <a aria-label="Ver detalles de Software de Gestión en Java" class="inline-flex items-center gap-xs text-primary hover:text-white font-label-md text-label-md focus:outline focus:outline-2 focus:outline-[#06B6D4] focus:outline-offset-2 rounded" href="#">
+                    Ver detalles <span aria-hidden="true" class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+        </article>
+        
+        <!-- Project 3 -->
+        <article class="bg-[#1E293B] rounded-lg border border-[#334155] hover:border-primary transition-colors focus-within:outline focus-within:outline-2 focus-within:outline-[#06B6D4] focus-within:outline-offset-4 flex flex-col h-full">
+            <div class="h-48 bg-surface-container-high rounded-t-lg flex items-center justify-center border-b border-[#334155]">
+                <span aria-hidden="true" class="material-symbols-outlined text-[64px] text-primary">accessibility_new</span>
+            </div>
+            <div class="p-md flex-grow flex flex-col">
+                <h3 class="text-headline-md font-headline-md mb-xs">Auditoría de Usabilidad</h3>
+                <p class="text-body-md font-body-md text-on-surface-variant flex-grow mb-sm">
+                    Evaluación exhaustiva de portal corporativo multinacional. Identificación y propuesta de remediación
+                    para más de 50 barreras críticas de accesibilidad.
+                </p>
+                <a aria-label="Ver detalles de Auditoría de Usabilidad" class="inline-flex items-center gap-xs text-primary hover:text-white font-label-md text-label-md focus:outline focus:outline-2 focus:outline-[#06B6D4] focus:outline-offset-2 rounded" href="#">
+                    Ver detalles <span aria-hidden="true" class="material-symbols-outlined text-sm">arrow_forward</span>
+                </a>
+            </div>
+        </article>
+    </div>
+
+</body>
+</html>

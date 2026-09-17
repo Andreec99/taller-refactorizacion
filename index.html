@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Systems Engineering Portfolio - Web Accessibility</title>
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    
+    <!-- NUEVO ENLACE AL CSS EXTERNO -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script id="tailwind-config" src="tailwind.js"></script>
+</head>
+
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container flex flex-col min-h-screen">
+    <a class="skip-link focus:outline focus:outline-2 focus:outline-[#06B6D4] focus:outline-offset-4" href="#main-content">Skip to Content</a>
+    
+    <header class="bg-surface dark:bg-surface sticky docked full-width top-0 z-50 border-b border-outline-variant dark:border-outline-variant">
+        <nav aria-label="Main Navigation" class="flex justify-between items-center w-full px-margin-mobile md:px-md max-w-container-max mx-auto h-16">
+            <a class="text-headline-md font-headline-md font-bold text-on-surface dark:text-on-surface focus:outline focus:outline-2 focus:outline-[#06B6D4] focus:outline-offset-4 rounded" href="#">SystemsEngineer</a>
+            <ul class="hidden md:flex gap-gutter items-center">
+                <li><a class="text-on-surface-variant dark:text-on-surface-variant transition-colors duration-150 text-label-md font-label-md" href="#about">About</a></li>
+                <li><a class="text-on-surface-variant dark:text-on-surface-variant transition-colors duration-150 text-label-md font-label-md" href="proyectos.html">Projects</a></li>
+                <li><a class="text-on-surface-variant dark:text-on-surface-variant transition-colors duration-150 text-label-md font-label-md" href="contacto.html">Contact</a></li>
+            </ul>
+            <div class="flex items-center gap-sm">
+                <button aria-label="Accessibility Menu" class="text-on-surface-variant hover:text-primary transition-colors focus:outline focus:outline-2 focus:outline-[#06B6D4] focus:outline-offset-4 p-2 rounded">
+                    <!-- ESTILO EN LÍNEA ELIMINADO Y REEMPLAZADO POR CLASE 'icon-fill' -->
+                    <span aria-hidden="true" class="material-symbols-outlined icon-fill">accessible</span>
+                </button>
+                <a class="hidden md:inline-flex bg-[#3B82F6] text-white px-4 py-2 rounded font-label-md text-label-md hover:bg-blue-600 transition-colors focus:outline focus:outline-2 focus:outline-[#06B6D4] focus:outline-offset-4 min-h-[48px] items-center" href="#download">
+                    Download CV
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow" id="main-content">
+        <!-- Hero Section -->
+        <section class="py-xl px-margin-mobile md:px-md max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+            <div class="space-y-md">
+                <h1 class="text-headline-xl-mobile md:text-headline-xl font-headline-xl-mobile md:font-headline-xl text-on-surface">Ingeniería de Sistemas + Accesibilidad Web</h1>
+                <p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">Diseñando soluciones robustas, escalables y universales. Estudiante de Ingeniería con enfoque en auditorías WCAG 2.1.</p>
+                <div class="flex flex-wrap gap-sm pt-sm">
+                    <a class="bg-[#3B82F6] text-white px-6 py-3 rounded font-label-md text-label-md hover:bg-blue-600 transition-colors focus:outline focus:outline-2 focus:outline-[#06B6D4] focus:outline-offset-4 min-h-[48px] inline-flex items-center justify-center text-center" href="#projects">Ver Proyectos</a>
+                </div>
+            </div>
+            <div class="relative h-64 md:h-96 rounded-xl border border-outline-variant overflow-hidden bg-surface-container flex items-center justify-center">
+                <span aria-hidden="true" class="material-symbols-outlined text-[80px] text-primary">engineering</span>
+            </div>
+        </section>
+
+        <!-- Experience/About Section -->
+        <section class="py-xl px-margin-mobile md:px-md max-w-container-max mx-auto border-t border-outline-variant" id="about">
+            <h2 class="text-headline-lg font-headline-lg mb-md text-on-surface">Experiencia y Enfoque</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-gutter">
+                <div class="bg-[#1E293B] p-md rounded-lg border border-[#334155] hover:border-primary transition-colors focus-within:outline focus-within:outline-2 focus-within:outline-[#06B6D4] focus-within:outline-offset-4">
+                    <h3 class="text-headline-md font-headline-md mb-sm flex items-center gap-xs">
+                        <span aria-hidden="true" class="material-symbols-outlined text-tertiary">fact_check</span> Auditorías de Accesibilidad
+                    </h3>
+                    <p class="text-body-md font-body-md text-on-surface-variant mb-sm">Especialista en evaluación y remediación de interfaces web siguiendo las pautas WCAG 2.1 nivel AA y AAA.</p>
+                </div>
+                <div class="bg-[#1E293B] p-md rounded-lg border border-[#334155] hover:border-primary transition-colors focus-within:outline focus-within:outline-2 focus-within:outline-[#06B6D4] focus-within:outline-offset-4">
+                    <h3 class="text-headline-md font-headline-md mb-sm flex items-center gap-xs">
+                        <span aria-hidden="true" class="material-symbols-outlined text-secondary">code</span> Desarrollo de Software
+                    </h3>
+                    <p class="text-body-md font-body-md text-on-surface-variant mb-sm">Desarrollo de aplicaciones robustas utilizando metodologías ágiles. Experiencia principal en ecosistema Java.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-surface-container dark:bg-surface-container border-t border-outline-variant dark:border-outline-variant mt-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center w-full px-margin-mobile md:px-md py-lg max-w-container-max mx-auto gap-md">
+            <div class="text-center md:text-left">
+                <p class="text-label-md font-label-md font-bold text-on-surface mb-2">SystemsEngineer</p>
+                <p class="text-body-md font-body-md text-on-surface-variant">© 2024 Systems Engineering Portfolio.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

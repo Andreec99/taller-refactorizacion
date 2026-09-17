@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;500;700&amp;display=swap" rel="stylesheet" />
+    
+    <!-- NUEVO ENLACE AL CSS EXTERNO -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script id="tailwind-config" src="tailwind.js"></script>
+</head>
+
+<body class="bg-background text-on-surface font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container flex flex-col min-h-screen">
+    <h2>Proyectos Messi</h2>
+    <a href="index.html">Ir a index</a>
+    
+    <section class="py-xl px-margin-mobile md:px-md max-w-container-max mx-auto border-t border-outline-variant" id="contact">
+        <div class="max-w-2xl mx-auto bg-[#1E293B] p-md md:p-xl rounded-lg border border-[#334155]">
+            <h2 class="text-headline-lg font-headline-lg mb-md text-center text-on-surface">Hablemos</h2>
+            <form action="#" class="space-y-md" method="POST" novalidate="">
+                <div>
+                    <label class="block text-label-md font-label-md text-on-surface mb-xs" for="name">Nombre Completo (Requerido)</label>
+                    <input aria-required="true" class="w-full bg-[#0F172A] border border-[#334155] text-on-surface rounded p-3 min-h-[48px] focus:border-[#06B6D4] focus:ring-1 focus:ring-[#06B6D4] focus:outline-none transition-colors" id="name" name="name" required="" type="text" />
+                </div>
+                <div>
+                    <label class="block text-label-md font-label-md text-on-surface mb-xs" for="email">Correo Electrónico (Requerido)</label>
+                    <input aria-describedby="email-hint" aria-required="true" class="w-full bg-[#0F172A] border border-[#334155] text-on-surface rounded p-3 min-h-[48px] focus:border-[#06B6D4] focus:ring-1 focus:ring-[#06B6D4] focus:outline-none transition-colors" id="email" name="email" required="" type="email" />
+                </div>
+                <div>
+                    <label class="block text-label-md font-label-md text-on-surface mb-xs" for="message">Mensaje (Requerido)</label>
+                    <textarea aria-required="true" class="w-full bg-[#0F172A] border border-[#334155] text-on-surface rounded p-3 focus:border-[#06B6D4] focus:ring-1 focus:ring-[#06B6D4] focus:outline-none transition-colors" id="message" name="message" required="" rows="4"></textarea>
+                </div>
+                <button class="w-full text-white px-6 py-3 rounded font-label-md text-label-md transition-colors min-h-[48px]" type="submit">
+                    Enviar Mensaje
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
