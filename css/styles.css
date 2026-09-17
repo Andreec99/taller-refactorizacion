@@ -1,6 +1,4 @@
-/* =========================================
-   VARIABLES Y DOCUMENTACIÓN DE COLORES CSS
-   ========================================= 
+/*
    Colores repetidos extraídos para cumplir con la rúbrica:
    - #1E293B (Fondo de tarjetas y secciones)
    - #334155 (Bordes de tarjetas y formularios)
@@ -16,26 +14,15 @@
     --color-btn: #3B82F6;
 }
 
-/* =========================================
-   REGLA BOX-SIZING
-   ========================================= 
-   Al agregar box-sizing: border-box, el padding y el border 
-   se incluyen dentro del ancho (width) y alto (height) total del elemento. 
-   Esto cambió el modelo de caja: ahora los elementos no se expanden hacia 
-   afuera al agregarles relleno o bordes, manteniendo intacto el diseño.
-*/
+
 * {
     box-sizing: border-box;
 }
 
-/* Reemplazo de los estilos en línea extraídos del HTML */
 .icon-fill {
     font-variation-settings: 'FILL' 0;
 }
 
-/* =========================================
-   ESTADOS :HOVER Y :FOCUS (Menú y Botones)
-   ========================================= */
 nav ul li a:hover,
 nav ul li a:focus {
     color: var(--color-focus);
@@ -51,9 +38,7 @@ form button[type="submit"]:focus {
     outline-offset: 4px;
 }
 
-/* =========================================
-   ESTILOS ORIGINALES
-   ========================================= */
+
 .skip-link {
     position: absolute;
     top: -40px;
